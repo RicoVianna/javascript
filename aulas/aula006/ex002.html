@@ -20,9 +20,8 @@
     <h1>Olá, mundo!</h1>
     <p>Já me livrei da maldição!</p>
     <script>
-        window.alert('Minha primeira mensagem!') // Abre uma janela com a mensagem que está escrita entre parenteses.
-        window.confirm('Está gostando de JavaScript?') //Abre uma janela com botão de "ok" e "cancelar"
-        window.prompt('Digite seu nome: ') //Abre uma janela com um prompt solicitando que digite alguma informação
+        var nome = window.prompt('Digite seu nome: ') //Abre uma janela com um prompt solicitando que digite alguma informação
+        window.alert('Olá, ' + nome + ', é um grande prazer te conhecer') // Essa linha é a resposta que o sistema dá para o comando (entrada de dados) anterior a este código. (o sinal de + chama "concatenação", e une a variável às partes anteriore e posteriore) 
     </script>
 </body>
 </html>

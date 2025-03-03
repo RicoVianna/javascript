@@ -20,9 +20,10 @@
     <h1>Olá, mundo!</h1>
     <p>Já me livrei da maldição!</p>
     <script>
-        window.alert('Minha primeira mensagem!') // Abre uma janela com a mensagem que está escrita entre parenteses.
-        window.confirm('Está gostando de JavaScript?') //Abre uma janela com botão de "ok" e "cancelar"
-        window.prompt('Digite seu nome: ') //Abre uma janela com um prompt solicitando que digite alguma informação
+        var n1 = Number(window.prompt('Digite um número: ')) // O elemento "Number" antes do parenteses transforma a variavel "string"(caracteres) em variavel "int"(número), e nesse caso é necessário, pois o programa entende que as variáveis "n1" e "n2" são strings.
+        var n2 = Number(window.prompt('Digite outro número: '))
+        var res = n1 + n2
+        window.alert(`A soma entre de ${n1} e ${n2} é ${res}`)
     </script>
 </body>
 </html>

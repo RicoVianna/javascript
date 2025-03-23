@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMIGRAÇÃO</title>
+    <style>
+        body {
+            background-color: lightgray;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        main {
+            background-color: gray;
+            width: 450px;
+            padding: 20px;
+            border: solid 2px black;
+        }
+
+        div {
+            background-color: white;
+            padding: 10px;
+            margin-top: 30px;
+            border: solid 1px black;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>CONTROLE DE IMIGRAÇÃO</h1>
+    <main>
+        País de origem: <input type="text" name="po" id="po">
+        <input type="button" value="Verificar" onclick="verificar()">
+        <div id="res">
+            Resultado
+        </div>
+    </main>
+
+    <script>
+        function verificar() {
+            var caixa = window.document.querySelector('input#po')
+            var res = window.document.querySelector('div#res')
+            var origem = (caixa.value)
+                        
+            if (origem != 'Brasil') {
+                res.innerHTML = `Você é estrangeiro e deve regulamentar sua situação!`
+            } else {
+                res.innerHTML = `Você é do ${origem} e pode circular tranquilamente pelo país!`
+            }
+        }
+    </script>
+</body>
+</html>

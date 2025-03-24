@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMIGRAÇÃO</title>
+    
+</head>
+<body>
+    <h1>Verificador de IMIGRAÇÃO</h1>
+    <p>Digite seu país no campo abaixo:</p>
+    <input type="text" name="pais" id="pais">
+    <input type="button" value="Verificar" onclick="resultado()">
+    <div id="res">
+        Resultado
+    </div>
+
+    <script>
+        function resultado() {
+            var campopais = window.document.querySelector('input#pais');
+            var res = window.document.querySelector('div#res');
+            var autorizacao = (campopais.value);
+
+            if (autorizacao == "Brasil") {
+                res.innerHTML = `Autorização concedida. Você é do ${autorizacao}!`
+            } else {
+                res.innerHTML = `Autoricação negada. Você não é do ${autorizacao} E deve providenciar a regularização!`
+            }
+        }
+    </script>
+
+
+</body>
+</html>

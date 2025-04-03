@@ -7,7 +7,7 @@ function adicionarTarefa() {
 
     if (tarefa == "") {
         var mensagemErro = "Digite uma tarefa para adicioná-la a sua lista!"
-        mensagem.textContent = mensagemErro 
+        mensagem.textContent = mensagemErro
     } else {
         var mensagemSucesso = "Tarefa adicionada com sucesso!"
         mensagem.textContent = mensagemSucesso

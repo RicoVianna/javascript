@@ -13,7 +13,7 @@ São separados em 6 categorias:
 6 - Operadores lógicos.
 */
 
-/*
+/*OPERADORES ARITIMÉTICOS
 var valor1, valor2, total;
 valor1 = 5; 
 valor2 = 2;
@@ -68,8 +68,8 @@ eleitor = (idade < 18) ? 'Não Eleitor!': 'Sim, Eleitor';
 alert(`A resposta é:  ${eleitor}. A idade dele é ${idade} `);
 */
 
-//OPERADORES LÓGICOS
-/*var idade, eleitor, resultado;
+/*OPERADORES LÓGICOS
+var idade, eleitor, resultado;
 idade = 65;
 eleitor = (idade < 18) ? 'Não Eleitor!': 'Sim, Eleitor';
 
@@ -86,7 +86,8 @@ resultado = (idade === 65 || idade === 72)
 alert(resultado)
 */
 
-/*var idade, eleitor, resultado;
+/*
+var idade, eleitor, resultado;
 idade = 64;
 eleitor = (idade < 18) ? 'Não Eleitor!': 'Sim, Eleitor';
 

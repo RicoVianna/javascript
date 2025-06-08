@@ -22,4 +22,19 @@ cursos.map((el, chave)=>{
     novoElemento.appendChild(comandos);
     
     caixaCursos.appendChild(novoElemento);
-})
+});
+
+btnCursoSelecionado.addEventListener('click', (evt)=> {
+    const todosRadios = [...document.querySelectorAll('input[type=radio]')];
+    let radioSelecionado = todosRadios.filter((ele, ind, arr)=>{
+        return ele.checked;
+    });
+
+    radioSelecionado = radioSelecionado[0];
+    //const cursoSelecionado = radioSelecionado.parentNode.parentNode.firstChild.textContent;
+    const cursoSelecionado = radioSelecionado.parentNode.previousSibling.textContent;
+    alert('Curso selecionado: ' + cursoSelecionado);
+    // console.log(todosRadios);
+    // console.log(radioSelecionado);
+    // console.log(cursoSelecionado);
+});

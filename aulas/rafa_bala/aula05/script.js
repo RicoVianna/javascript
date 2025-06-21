@@ -1,6 +1,6 @@
 let tarefas = [];
 
-function adicionarTarefa() {
+function adicionarTarefa () {
 
     const inputTarefa = document.getElementById('inputTarefa');
     let tarefa = inputTarefa.value.trim();

@@ -1,1 +1,0 @@
-console.log("Tentativa de amarelar a pasta no Git.");

@@ -20,7 +20,7 @@ function adicionarTarefa() {
         renderizarTarefas();
 }  
 
-    .value = '';
+    inputTarefa.value = '';
 }
 
 function renderizarTarefas() {

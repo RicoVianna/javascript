@@ -1,1 +1,1 @@
-console.log("Teste para verificar alteração no Git.");
+console.log("Tentativa de amarelar a pasta no Git.");

@@ -26,7 +26,7 @@ function adicionarTarefa() {
 function renderizarTarefas() {
     const listaTarefas = document.getElementById('listaTarefas') ;
 
-    listaTarefas.innerHTML = '';
+    
     
     for (let i = 0; i < tarefas.length; i++) {
         let novaTarefa = document.createElement('li');
